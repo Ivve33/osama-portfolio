@@ -7,17 +7,19 @@
 }
 
 :root {
-  color-scheme: dark;
-  --canvas: #111019;
-  --surface: #191823;
-  --surface-muted: #15141e;
-  --line: #333141;
-  --ink: #f6f3ff;
-  --muted: #c0bdcd;
-  --quiet: #a6a2b7;
-  --accent: #d5c5ff;
-  --accent-hover: #e6dcff;
-  --accent-ink: #241643;
+  color-scheme: light;
+  --canvas: #ffffff;
+  --surface: #ffffff;
+  --surface-muted: #f5f7ff;
+  --line: #d9dfef;
+  --ink: #24244b;
+  --muted: #424d67;
+  --quiet: #525d79;
+  --accent: #5142b5;
+  --accent-hover: #392986;
+  --accent-ink: #ffffff;
+  --accent-soft: #ede9ff;
+  --card-shadow: 0 12px 32px #3432600d;
   --container: 1160px;
   --header-height: 72px;
   --gutter: clamp(1rem, 4.4vw, 3.5rem);
@@ -85,8 +87,8 @@ button {
 }
 
 ::selection {
-  background: var(--accent);
-  color: var(--accent-ink);
+  background: var(--accent-soft);
+  color: var(--accent-hover);
 }
 
 .container {
@@ -114,7 +116,7 @@ button {
   z-index: 5;
   top: 0;
   border-bottom: 1px solid var(--line);
-  background: #111019f5;
+  background: #fffffff5;
   backdrop-filter: blur(16px);
 }
 
@@ -143,8 +145,8 @@ button {
   place-items: center;
   flex: none;
   border-radius: 11px;
-  background: var(--accent);
-  color: var(--accent-ink);
+  background: var(--accent-soft);
+  color: var(--accent);
   font-size: .85rem;
   letter-spacing: -.045em;
 }
@@ -197,14 +199,14 @@ button {
 }
 
 .button-outline, .nav-toggle {
-  border-color: var(--line);
-  background: transparent;
-  color: var(--ink);
+  border-color: #b6b7dd;
+  background: var(--surface);
+  color: var(--accent);
 }
 
 .button-outline:hover, .nav-toggle:hover {
   border-color: var(--accent);
-  background: #292335;
+  background: var(--accent-soft);
   color: var(--accent-hover);
 }
 
@@ -223,8 +225,9 @@ button {
   padding-top: clamp(3rem, 6vw, 5.25rem);
   border-bottom: 1px solid var(--line);
   background:
-    radial-gradient(ellipse at 87% 12%, #322249 0%, transparent 50%),
-    linear-gradient(160deg, #171420, var(--canvas) 68%);
+    radial-gradient(ellipse at 88% 10%, #e9e2ff, transparent 58%),
+    radial-gradient(ellipse at 5% 100%, #e2f8ee, transparent 54%),
+    linear-gradient(165deg, #eef5ff, #fbfcff 78%);
 }
 
 .hero-grid {
@@ -278,7 +281,7 @@ button {
   height: .5rem;
   flex: none;
   border-radius: 50%;
-  background: #8edab2;
+  background: #178060;
   content: "";
 }
 
@@ -308,10 +311,10 @@ button {
 
 .portrait {
   overflow: hidden;
-  border: 1px solid #4c405b;
+  border: 1px solid var(--line);
   border-radius: var(--radius);
-  background: #1c1827;
-  box-shadow: 0 24px 55px #07060d55;
+  background: var(--surface);
+  box-shadow: 0 24px 55px #463a8524;
 }
 
 .portrait img {
@@ -426,11 +429,13 @@ button {
   display: flex;
   flex-direction: column;
   min-width: 0;
-  transition: border-color .18s;
+  box-shadow: var(--card-shadow);
+  transition: border-color .18s, box-shadow .18s;
 }
 
 .project-card:hover, .project-card:focus-within {
-  border-color: #7a6a98;
+  border-color: #a39adc;
+  box-shadow: 0 14px 32px #5142b51a;
 }
 
 .project-visual {
@@ -458,7 +463,7 @@ button {
 }
 
 .rafiq-visual, .airquest-visual {
-  background: #211a26;
+  background: var(--accent-soft);
 }
 
 .rafiq-visual img {
@@ -537,7 +542,7 @@ button {
   font-size: .875rem;
   font-weight: 800;
   text-decoration: underline;
-  text-decoration-color: #7e6fa4;
+  text-decoration-color: #8c7fd2;
   text-underline-offset: .24em;
 }
 
@@ -550,7 +555,7 @@ button {
   display: grid;
   grid-template-columns: minmax(0, .75fr) minmax(0, 1.75fr);
   overflow: hidden;
-  border: 1px solid #514365;
+  border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--surface);
 }
@@ -560,13 +565,14 @@ button {
 }
 
 .research-meta {
-  border-inline-end: 1px solid #514365;
-  background: radial-gradient(ellipse at 0 0, #493465, #251c33 82%);
+  border-inline-end: 1px solid var(--line);
+  background: linear-gradient(145deg, #e7e0ff, #f3eeff 70%);
 }
 
 .research-meta strong {
   display: block;
   margin-block: .4rem .8rem;
+  color: var(--accent-hover);
   font-size: clamp(1.8rem, 4vw, 3rem);
   letter-spacing: -.065em;
   line-height: 1.15;
@@ -671,7 +677,7 @@ button {
 }
 
 .contact-section {
-  background: radial-gradient(ellipse at 16% 0%, #38283f, transparent 70%), #1b1524;
+  background: linear-gradient(125deg, #e0f6ed, #edf2ff 74%);
 }
 
 .contact-grid p {
@@ -789,7 +795,7 @@ button {
     border: 1px solid var(--line);
     border-radius: 12px;
     background: var(--surface);
-    box-shadow: 0 15px 35px #07060d75;
+    box-shadow: 0 15px 35px #36326526;
   }
 
   .primary-nav.is-open {
@@ -845,7 +851,7 @@ button {
 
   .research-meta {
     border-inline-end: 0;
-    border-bottom: 1px solid #514365;
+    border-bottom: 1px solid var(--line);
   }
 }
 
@@ -886,25 +892,25 @@ button {
 }
 
 .case-page {
-  --case-tint: #342847;
+  --case-tint: #eee6ff;
 }
 
 .case-rafiq-al-hajj {
-  --case-tint: #1b493d;
+  --case-tint: #dcf6e9;
 }
 
 .case-airquest {
-  --case-tint: #38245a;
+  --case-tint: #e8e4ff;
 }
 
 .case-15-min {
-  --case-tint: #203950;
+  --case-tint: #dfedff;
 }
 
 .case-hero {
   padding-top: clamp(1.8rem, 4vw, 3.25rem);
   border-bottom: 1px solid var(--line);
-  background: radial-gradient(ellipse at 88% 5%, var(--case-tint), transparent 62%);
+  background: linear-gradient(145deg, var(--case-tint), #ffffff 82%);
 }
 
 .case-back {
