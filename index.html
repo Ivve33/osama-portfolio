@@ -1,99 +1,261 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="no-js">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Osama Al-Ghamdi | Software Engineering Portfolio</title>
-  <meta name="description" content="Portfolio of Osama Al-Ghamdi, a software engineering student building practical products and researching AI-assisted learning tools.">
+  <meta name="description" content="Software engineering, applied AI research, and selected projects by Osama Al-Ghamdi, a senior software engineering student at the University of Jeddah.">
   <meta name="author" content="Osama Al-Ghamdi">
-  <meta name="theme-color" content="#0f766e">
+  <meta name="theme-color" content="#ffffff">
   <meta property="og:title" content="Osama Al-Ghamdi | Software Engineering Portfolio">
-  <meta property="og:description" content="Software engineering, AI research, web and Android projects by Osama Al-Ghamdi.">
+  <meta property="og:description" content="Web and Android projects, applied AI research, and selected work by Osama Al-Ghamdi.">
   <meta property="og:type" content="website">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230f766e'/%3E%3Ctext x='32' y='41' font-family='Arial,sans-serif' font-size='25' font-weight='700' text-anchor='middle' fill='white'%3EOA%3C/text%3E%3C/svg%3E">
+  <link rel="icon" href="assets/images/monogram.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/style.css">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"Person","name":"Osama Al-Ghamdi","jobTitle":"Software Engineering Student","affiliation":{"@type":"CollegeOrUniversity","name":"University of Jeddah"},"address":{"@type":"PostalAddress","addressLocality":"Jeddah","addressCountry":"Saudi Arabia"},"email":"mailto:Osama.a.alghamdi707@gmail.com","sameAs":["https://www.linkedin.com/in/osama-alghamdi-51555a34b","https://github.com/Ivve33"]}
   </script>
+  <script src="js/main.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#main-content">Skip to main content</a>
-  <header class="site-header" id="site-header">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
     <div class="container nav-wrap">
-      <a class="brand" href="#home" aria-label="Osama Al-Ghamdi, home">OA<span>.</span></a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation"><span></span><span></span><span></span></button>
-      <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
-        <a href="#home">Home</a><a href="#about">About</a><a href="#research">Research</a><a href="#projects">Projects</a><a href="#achievements">Achievements</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
-        <a class="button button-small" href="assets/documents/osama-alghamdi-cv.pdf" target="_blank">View CV</a>
+      <a class="brand" href="#home">
+        <span class="monogram" aria-hidden="true">OA</span>
+        <span>Osama Al-Ghamdi</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
+        <a href="#projects">Projects</a>
+        <a href="#research">Research</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a class="button button-outline" href="assets/documents/osama-alghamdi-cv.pdf" target="_blank" rel="noopener">View CV</a>
       </nav>
     </div>
   </header>
 
-  <main id="main-content">
-    <!-- Hero -->
-    <section class="hero section" id="home" aria-labelledby="hero-title">
+  <main id="main-content" tabindex="-1">
+    <section class="hero" id="home" aria-labelledby="hero-title">
       <div class="container hero-grid">
-        <div class="hero-copy reveal">
-          <p class="eyebrow">Software Engineering Student</p>
-          <h1 id="hero-title">Hi, I’m <span>Osama Al-Ghamdi.</span></h1>
-          <p class="hero-lead">I build practical digital products across web and Android, and explore how artificial intelligence and software research can create better learning and user experiences.</p>
-          <div class="button-row"><a class="button" href="#research">View My Work</a><a class="button button-secondary" href="assets/documents/osama-alghamdi-cv.pdf" target="_blank">View CV</a></div>
-          <div class="social-row"><a href="https://github.com/Ivve33" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/osama-alghamdi-51555a34b" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></div>
+        <div class="hero-copy">
+          <p class="eyebrow role">Senior Software Engineering Student</p>
+          <h1 id="hero-title">Osama<br><span>Al-Ghamdi.</span></h1>
+          <p class="hero-lead">I build web and Android products, from making lab results easier to read to helping pilgrims find their group offline.</p>
+          <div class="action-row">
+            <a class="button" href="#projects">Explore projects</a>
+            <a class="button button-outline" href="assets/documents/osama-alghamdi-cv.pdf" target="_blank" rel="noopener">View CV</a>
+          </div>
+          <p class="availability">Open to a Software Engineering CO-OP</p>
+          <ul class="social-links" aria-label="Social profiles">
+            <li><a href="https://github.com/Ivve33" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/osama-alghamdi-51555a34b" target="_blank" rel="noopener">LinkedIn</a></li>
+          </ul>
         </div>
-        <div class="portrait-wrap reveal"><div class="portrait-frame"><img src="assets/images/profile-photo.jpeg" alt="Portrait of Osama Al-Ghamdi" width="900" height="1600"></div></div>
+        <figure class="portrait">
+          <img src="assets/images/profile-photo.jpeg" alt="Osama Al-Ghamdi" width="900" height="1600" fetchpriority="high">
+          <figcaption><span>Jeddah, Saudi Arabia</span><span>University of Jeddah</span></figcaption>
+        </figure>
       </div>
-      <div class="container metrics" aria-label="Career highlights">
-        <div><strong>ASE 2026</strong><span>Accepted Paper</span></div><div><strong>4.61 / 5.00</strong><span>GPA</span></div><div><strong>1st Place</strong><span>Competition Winner</span></div><div><strong>3 Awards</strong><span>Academic Excellence</span></div>
+      <ul class="container highlights" aria-label="Portfolio highlights">
+        <li><a href="#research"><strong>ASE 2026</strong><span>Accepted research paper</span></a></li>
+        <li><a href="#repocare"><strong>1st Place</strong><span>Graduation Project in 3 Minutes</span></a></li>
+        <li><a href="#rafiq"><strong>Top 20</strong><span>Future of Hajj Innovations Camp</span></a></li>
+        <li><a href="#experience"><strong>4.61 <small>/ 5.00</small></strong><span>Software engineering GPA</span></a></li>
+      </ul>
+    </section>
+
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-heading">
+          <h2 id="projects-title">Selected projects</h2>
+          <p>From health reports and offline navigation to collaborative learning.</p>
+        </div>
+        <div class="featured-grid">
+          <article class="project-card featured-card" id="repocare">
+            <div class="project-visual repocare-visual">
+              <img src="projects/repocare/media/app-screens.webp" alt="Four RepoCare screens showing health scores, report management, and lab results" width="1304" height="491" loading="lazy" decoding="async">
+            </div>
+            <div class="project-content">
+              <p class="project-award">1st Place · Graduation Project in 3 Minutes</p>
+              <h3>RepoCare</h3>
+              <p>Organizes medical reports, extracts lab results, and helps people understand their health data. I built the Spring Boot AI integration and worked on AI-assisted meal analysis.</p>
+              <ul class="tags" aria-label="Technologies"><li>Spring Boot</li><li>Android</li><li>Firebase</li><li>Anthropic API</li></ul>
+              <div class="card-links"><a href="projects/repocare/index.html">Explore RepoCare</a><a href="assets/documents/repocare-project.pdf" target="_blank" rel="noopener">Project PDF</a></div>
+            </div>
+          </article>
+
+          <article class="project-card featured-card" id="rafiq">
+            <div class="project-visual rafiq-visual">
+              <img src="projects/rafiq-al-hajj/media/hajj-expo.webp" alt="Osama beside the Rafiq Al-Hajj project display at the Hajj Exhibition" width="619" height="1100" loading="lazy" decoding="async">
+            </div>
+            <div class="project-content">
+              <p class="project-award">Top 20 · Future of Hajj Innovations Camp 2026</p>
+              <h3>Rafiq Al-Hajj</h3>
+              <p>A multilingual Hajj companion that helps pilgrims find their camp and nearby services offline. Our team placed in the top 20 out of 150+ entries and was awarded SAR 25,000 in funding.</p>
+              <ul class="tags" aria-label="Project features"><li>Offline navigation</li><li>Multilingual</li><li>Web app</li></ul>
+              <div class="card-links"><a href="projects/rafiq-al-hajj/index.html">Explore Rafiq Al-Hajj</a><a href="https://rafiq-alhaj-nine.vercel.app/" target="_blank" rel="noopener">Try prototype</a></div>
+            </div>
+          </article>
+        </div>
+
+        <h3 class="subsection-heading">Hackathon &amp; academy projects</h3>
+        <div class="featured-grid">
+          <article class="project-card">
+            <div class="project-visual airquest-visual">
+              <img src="projects/airquest/media/riyadh-air.webp" alt="Osama at Riyadh Air holding a branded folder" width="675" height="1200" loading="lazy" decoding="async">
+            </div>
+            <div class="project-content">
+              <h3>AirQuest</h3>
+              <p class="project-type">Riyadh Air Global Hackathon</p>
+              <p>An airport passenger experience built around location-aware missions, navigation, challenges, and loyalty rewards.</p>
+              <ul class="tags" aria-label="Project features"><li>AI</li><li>GPS</li><li>AR concepts</li></ul>
+              <div class="card-links"><a href="projects/airquest/index.html">Explore AirQuest</a><a href="assets/documents/airquest-project.pdf" target="_blank" rel="noopener">Project PDF</a></div>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-visual tuwaiq-visual">
+              <img src="projects/15-min/media/tuwaiq-academy.webp" alt="Osama working at a laptop during the Tuwaiq Academy program" width="320" height="180" loading="lazy" decoding="async">
+            </div>
+            <div class="project-content">
+              <h3>15 Min</h3>
+              <p class="project-type">3D escape room · Tuwaiq Academy</p>
+              <p>A playable Unity prototype with interactive puzzles and a countdown, built during Tuwaiq Academy’s game design program.</p>
+              <ul class="tags" aria-label="Technologies"><li>Unity</li><li>C#</li><li>Game design</li></ul>
+              <div class="card-links"><a href="projects/15-min/index.html">Explore 15 Min</a><a href="assets/certificates/game-design-tuwaiq.pdf" target="_blank" rel="noopener">Certificate</a></div>
+            </div>
+          </article>
+        </div>
+
+        <h3 class="subsection-heading">More projects</h3>
+        <div class="project-grid">
+          <article class="project-card project-content">
+            <h3>Think-Up</h3>
+            <p class="project-type">Collaborative study platform</p>
+            <p>Helps university students find shared courses, join study sessions, and access recordings, transcripts, and AI-generated summaries.</p>
+            <ul class="tags" aria-label="Technologies"><li>React</li><li>JavaScript</li><li>Firebase</li></ul>
+            <div class="card-links"><a href="assets/documents/think-up-project.pdf" target="_blank" rel="noopener">Project PDF</a><a href="https://github.com/Ivve33/Think-up" target="_blank" rel="noopener">GitHub</a></div>
+          </article>
+          <article class="project-card project-content">
+            <h3>Aware</h3>
+            <p class="project-type">Early Android iteration of RepoCare</p>
+            <p>An Android app for uploading and reviewing PDF and image reports, with text extraction and AI-assisted interpretation.</p>
+            <ul class="tags" aria-label="Technologies"><li>Java</li><li>Android</li><li>Firebase</li><li>OCR</li></ul>
+            <div class="card-links"><a href="assets/documents/aware-project.pdf" target="_blank" rel="noopener">Project PDF</a><a href="projects/repocare/index.html">See RepoCare</a></div>
+          </article>
+          <article class="project-card project-content">
+            <h3>Masadir</h3>
+            <p class="project-type">Human-computer interaction project</p>
+            <p>A design project shaped by user interviews, surveys, task analysis, and low- and high-fidelity prototyping.</p>
+            <ul class="tags" aria-label="Methods and tools"><li>User research</li><li>Prototyping</li><li>Figma</li></ul>
+            <div class="card-links"><a href="assets/documents/masader-project.pdf" target="_blank" rel="noopener">Project PDF</a></div>
+          </article>
+        </div>
       </div>
     </section>
 
-    <!-- About -->
-    <section class="section section-muted" id="about" aria-labelledby="about-title"><div class="container about-grid reveal"><div><p class="eyebrow">About me</p><h2 id="about-title">Engineering with purpose and curiosity.</h2></div><div class="about-copy"><p>I am pursuing a Bachelor of Software Engineering at the University of Jeddah’s College of Computer Science and Engineering. My experience spans responsive web applications, Android development, Firebase-backed systems, and user-centered interface design.</p><p>I am especially interested in artificial intelligence, applied software research, and creating useful products grounded in real user needs. I enjoy Agile, collaborative development—from requirements and planning to implementation, evaluation, and technical documentation.</p><dl class="facts"><div><dt>University</dt><dd>University of Jeddah</dd></div><div><dt>Degree</dt><dd>Bachelor of Software Engineering</dd></div><div><dt>Expected graduation</dt><dd>2027</dd></div><div><dt>Location</dt><dd>Jeddah, Saudi Arabia</dd></div></dl></div></div></section>
+    <section class="section section-muted" id="research" aria-labelledby="research-title">
+      <div class="container">
+        <div class="section-heading"><h2 id="research-title">Research</h2></div>
+        <article class="research-card">
+          <div class="research-meta">
+            <p class="eyebrow">Accepted paper</p>
+            <strong>ASE 2026</strong>
+            <p>41st IEEE/ACM International Conference on Automated Software Engineering</p>
+            <p>Tools and Datasets Track</p>
+          </div>
+          <div class="research-content">
+            <h3>VidSumEval</h3>
+            <p class="paper-title">A Web Platform and Benchmark for Evaluating AI-Generated Programming Video Summaries</p>
+            <p>Our peer-reviewed work compares AI-generated programming video summaries using learner comprehension and human quality assessments. I contributed to the platform, benchmark design, participant evaluation, and analysis.</p>
+            <div class="action-row">
+              <a class="button" href="assets/documents/vidsumeval-paper.pdf" target="_blank" rel="noopener">Read the paper</a>
+              <a class="button button-outline" href="https://doi.org/10.1145/3832783.3834594" target="_blank" rel="noopener">DOI</a>
+              <a class="button button-outline" href="https://github.com/Ivve33/VidSumEval" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
 
-    <!-- Featured research -->
-    <section class="section" id="research" aria-labelledby="research-title"><div class="container"><div class="section-heading reveal"><p class="eyebrow">Featured research</p><h2 id="research-title">Learning-centered evaluation for AI summaries.</h2></div><article class="research-card reveal"><div class="research-index" aria-hidden="true">01</div><div><span class="badge">Accepted Paper — ASE 2026</span><h3>VidSumEval: A Web Platform and Benchmark for Evaluating AI-Generated Programming Video Summaries</h3><p class="conference">41st IEEE/ACM International Conference on Automated Software Engineering · Tools and Datasets Track</p><p>VidSumEval is a web platform and reusable benchmark for evaluating AI-generated programming tutorial video summaries from a learning-centered perspective. It compares summary quality through comprehension and human quality measures.</p><div class="button-row"><a class="button" href="assets/documents/vidsumeval-paper.pdf" target="_blank">Read Paper</a><a class="text-link" href="https://doi.org/10.1145/3832783.3834594" target="_blank" rel="noopener noreferrer">View DOI <span aria-hidden="true">↗</span></a><a class="text-link" href="https://github.com/Ivve33/VidSumEval" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div></div></article></div></section>
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div>
+          <h2 id="about-title">About me</h2>
+          <p class="about-intro">I’m a senior software engineering student at the University of Jeddah, working across frontend, backend, and Android development. I’m interested in applied AI, software research, and designing tools around real user needs.</p>
+          <p>I enjoy working with teams through requirements, implementation, evaluation, and technical documentation. I’m currently seeking a software engineering CO-OP.</p>
+        </div>
+        <dl class="facts">
+          <div><dt>University</dt><dd>University of Jeddah</dd></div>
+          <div><dt>Degree</dt><dd>Bachelor of Software Engineering</dd></div>
+          <div><dt>Expected graduation</dt><dd>2027</dd></div>
+          <div><dt>Location</dt><dd>Jeddah, Saudi Arabia</dd></div>
+        </dl>
+      </div>
+    </section>
 
-    <!-- Projects -->
-    <section class="section section-muted" id="projects" aria-labelledby="projects-title"><div class="container"><div class="section-heading reveal"><p class="eyebrow">Selected projects</p><h2 id="projects-title">Products shaped by real problems.</h2><p>A selection of health, learning, travel, design, and game-development work.</p></div><div class="project-grid">
-      <article class="project-card featured reveal"><div class="card-top"><span class="project-number">01</span><span class="badge badge-winner">1st Place Winner</span></div><h3>RepoCare <span>— AI-Assisted Health Insight Platform</span></h3><p>An AI-assisted personal health platform designed to organize medical reports, extract biomarkers, connect wearable health data, and present complex health information more clearly.</p><ul class="tags"><li>AI</li><li>Health Technology</li><li>OCR</li><li>Biomarkers</li><li>Android</li><li>Software Engineering</li></ul><a class="text-link" href="assets/documents/repocare-project.pdf" target="_blank">View Project PDF <span aria-hidden="true">→</span></a></article>
-      <article class="project-card featured reveal"><span class="project-number">02</span><h3>Think-Up <span>— Collaborative Study Platform</span></h3><p>A bilingual collaborative study platform that helps university students explore majors and shared courses, create study sessions, join live meetings, and access recordings, transcripts, and session summaries.</p><ul class="tags"><li>React</li><li>JavaScript</li><li>Firebase</li><li>Responsive Design</li></ul><div class="card-links"><a class="text-link" href="assets/documents/think-up-project.pdf" target="_blank">View Project PDF <span aria-hidden="true">→</span></a><a class="text-link" href="https://github.com/Ivve33/Think-up" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div></article>
-      <article class="project-card featured reveal"><span class="project-number">03</span><h3>AirQuest <span>— Riyadh Air Hackathon Project</span></h3><p>A gamified passenger engagement concept designed for the Riyadh Air ecosystem using AI-driven personalization, location-aware airport missions, navigation, challenges, and loyalty rewards.</p><ul class="tags"><li>AI</li><li>Gamification</li><li>GPS</li><li>AR Concepts</li><li>Product Design</li></ul><a class="text-link" href="assets/documents/airquest-project.pdf" target="_blank">View Project PDF <span aria-hidden="true">→</span></a></article>
-      <article class="project-card reveal"><span class="project-number">04</span><h3>Aware <span>— Medical Reports Application</span></h3><p>An Android application for securely managing medical reports, uploading PDF and image files, reviewing health information, and supporting AI-assisted report interpretation.</p><ul class="tags"><li>Java</li><li>Android Studio</li><li>Firebase</li><li>OCR</li><li>UI/UX</li></ul><a class="text-link" href="assets/documents/aware-project.pdf" target="_blank">View Project PDF <span aria-hidden="true">→</span></a></article>
-      <article class="project-card reveal"><span class="project-number">05</span><h3>Masadir <span>— HCI Design Project</span></h3><p>A human-computer interaction project developed through user research, interviews, surveys, task analysis, low-fidelity prototyping, and high-fidelity interface design.</p><ul class="tags"><li>HCI</li><li>User Research</li><li>Prototyping</li><li>UI/UX</li><li>Figma</li></ul><a class="text-link" href="assets/documents/masader-project.pdf" target="_blank">View Project PDF <span aria-hidden="true">→</span></a></article>
-      <article class="project-card reveal"><span class="project-number">06</span><h3>15 Min <span>— 3D Escape Room Game</span></h3><p>A playable 3D escape room prototype featuring interactive puzzles, a countdown system, and an immersive environment, created during the Tuwaiq Academy Game Design and Development Program.</p><ul class="tags"><li>Unity</li><li>C#</li><li>Game Design</li></ul><a class="text-link" href="assets/certificates/game-design-tuwaiq.pdf" target="_blank">View Certificate <span aria-hidden="true">→</span></a></article>
-    </div></div></section>
+    <section class="section section-muted" id="achievements" aria-labelledby="achievements-title">
+      <div class="container">
+        <div class="section-heading"><h2 id="achievements-title">Achievements</h2></div>
+        <ul class="detail-list">
+          <li><span class="detail-label">Top 20 · 2026</span><div><h3>Future of Hajj Innovations Camp</h3><p>The Rafiq Al-Hajj team was selected from 150+ entries and awarded SAR 25,000 in funding.</p></div></li>
+          <li><span class="detail-label">1st Place</span><div><h3>Graduation Project in 3 Minutes Competition</h3><p>Presented RepoCare as an AI-assisted platform for understanding health reports.</p></div></li>
+          <li><span class="detail-label">ASE 2026</span><div><h3>Accepted research paper</h3><p>Co-authored VidSumEval for the ASE Tools and Datasets Track.</p></div></li>
+          <li><span class="detail-label">3 Awards</span><div><h3>Academic Excellence Awards</h3><p>Recognized by the University of Jeddah for academic excellence.</p><div class="card-links"><a href="assets/certificates/academic-excellence-2024-2025.jpeg" target="_blank" rel="noopener">2024/2025 certificate</a><a href="assets/certificates/academic-excellence-2025-2026.jpeg" target="_blank" rel="noopener">2025/2026 certificate</a></div></div></li>
+          <li><span class="detail-label">Hackathon</span><div><h3>Riyadh Air Global Hackathon</h3><p>Helped develop and present AirQuest, a gamified passenger experience.</p></div></li>
+          <li><span class="detail-label">60 Hours</span><div><h3>Tuwaiq Academy Game Design and Development</h3><p>Completed the program and built the first prototype of the 15 Min escape room.</p></div></li>
+        </ul>
+      </div>
+    </section>
 
-    <!-- Achievements -->
-    <section class="section" id="achievements" aria-labelledby="achievements-title"><div class="container"><div class="section-heading reveal"><p class="eyebrow">Achievements & awards</p><h2 id="achievements-title">Milestones along the way.</h2></div><ol class="achievement-list">
-      <li class="reveal"><span class="achievement-year">ASE 2026</span><div><h3>Accepted Research Paper — ASE 2026</h3><p>Co-authored VidSumEval, accepted to the ASE 2026 Tools and Datasets Track.</p></div></li>
-      <li class="reveal"><span class="achievement-year">1st Place</span><div><h3>Graduation Project in 3 Minutes Competition</h3><p>Awarded first place for presenting RepoCare as an AI-assisted health insight platform.</p></div></li>
-      <li class="reveal"><span class="achievement-year">3 Awards</span><div><h3>Three Academic Excellence Awards</h3><p>Recognized by the University of Jeddah for sustained academic excellence. Current GPA: 4.61 / 5.00.</p><div class="certificate-links"><a class="text-link" href="assets/certificates/academic-excellence-2024-2025.jpeg" target="_blank">Academic Year 2024/2025 <span aria-hidden="true">↗</span></a><a class="text-link" href="assets/certificates/academic-excellence-2025-2026.jpeg" target="_blank">Academic Year 2025/2026 <span aria-hidden="true">↗</span></a></div></div></li>
-      <li class="reveal"><span class="achievement-year">Hackathon</span><div><h3>Riyadh Air Global Hackathon</h3><p>Participated in the development and presentation of AirQuest, a gamified passenger experience concept.</p></div></li>
-      <li class="reveal"><span class="achievement-year">60 Hours</span><div><h3>Game Design and Development Program — Tuwaiq Academy</h3><p>Completed a 60-hour game design and development program and created the first prototype of the 15 Min escape room game.</p></div></li>
-    </ol></div></section>
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-heading"><h2 id="skills-title">Technical skills</h2></div>
+        <div class="skills-grid">
+          <article class="skill-group"><h3>Languages</h3><ul class="tags"><li>Java</li><li>JavaScript</li><li>Python</li><li>C#</li><li>SQL</li><li>HTML</li><li>CSS</li></ul></article>
+          <article class="skill-group"><h3>Web &amp; backend</h3><ul class="tags"><li>React</li><li>Spring Boot</li><li>Responsive web design</li><li>REST APIs</li></ul></article>
+          <article class="skill-group"><h3>Mobile, cloud &amp; games</h3><ul class="tags"><li>Android Studio</li><li>Firebase Authentication</li><li>Firestore</li><li>Firebase Storage</li><li>Unity</li></ul></article>
+          <article class="skill-group"><h3>Software engineering</h3><ul class="tags"><li>Object-oriented programming</li><li>Requirements</li><li>Agile / Scrum</li><li>HCI</li><li>Technical documentation</li></ul></article>
+          <article class="skill-group"><h3>Tools</h3><ul class="tags"><li>Git</li><li>GitHub</li><li>Figma</li><li>Jira</li><li>LaTeX</li><li>VS Code</li></ul></article>
+        </div>
+      </div>
+    </section>
 
-    <!-- Skills -->
-    <section class="section section-muted" id="skills" aria-labelledby="skills-title"><div class="container"><div class="section-heading reveal"><p class="eyebrow">Technical toolkit</p><h2 id="skills-title">Skills for building end to end.</h2></div><div class="skills-grid">
-      <article class="skill-group reveal"><span>01</span><h3>Programming</h3><ul><li>Java</li><li>JavaScript</li><li>Python</li><li>C#</li><li>SQL</li><li>HTML</li><li>CSS</li></ul></article>
-      <article class="skill-group reveal"><span>02</span><h3>Web Development</h3><ul><li>React</li><li>Responsive Web Design</li><li>Firebase</li><li>REST APIs</li></ul></article>
-      <article class="skill-group reveal"><span>03</span><h3>Mobile & Game Development</h3><ul><li>Android Studio</li><li>Firebase Authentication</li><li>Firestore</li><li>Firebase Storage</li><li>Unity</li></ul></article>
-      <article class="skill-group reveal"><span>04</span><h3>Software Engineering</h3><ul><li>Object-Oriented Programming</li><li>Software Requirements</li><li>Agile</li><li>Scrum</li><li>HCI</li><li>Technical Documentation</li><li>Git</li><li>GitHub</li></ul></article>
-      <article class="skill-group reveal"><span>05</span><h3>Design & Tools</h3><ul><li>Figma</li><li>Jira</li><li>LaTeX</li><li>VS Code</li></ul></article>
-    </div></div></section>
+    <section class="section section-muted" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <div class="section-heading"><h2 id="experience-title">Education &amp; experience</h2></div>
+        <ul class="detail-list">
+          <li><div class="timeline-meta"><span class="detail-label">Aug 2023 – Expected 2027</span><span>Jeddah, Saudi Arabia</span></div><div><h3>Bachelor of Software Engineering</h3><p class="organization">University of Jeddah · College of Computer Science and Engineering</p><p>GPA 4.61 / 5.00</p></div></li>
+          <li><div class="timeline-meta"><span class="detail-label">Mar 2025 – May 2025</span><span>Jeddah, Saudi Arabia</span></div><div><h3>Student Developer</h3><p class="organization">University of Jeddah</p><p>Worked in an academic Agile team on interface design, requirements analysis, project planning, documentation, and usability evaluation.</p></div></li>
+          <li><div class="timeline-meta"><span class="detail-label">Oct 2022 – Dec 2022</span><span>Jeddah, Saudi Arabia</span></div><div><h3>Event Organizer</h3><p class="organization">Prestige Saudi Co. Ltd · Jeddah Season</p><p>Supported event operations, visitor communication, and queue and crowd management during peak periods.</p></div></li>
+        </ul>
+      </div>
+    </section>
 
-    <!-- Education and experience -->
-    <section class="section" id="experience" aria-labelledby="experience-title"><div class="container"><div class="section-heading reveal"><p class="eyebrow">Education & experience</p><h2 id="experience-title">Learning through study and practice.</h2></div><div class="timeline">
-      <article class="timeline-item reveal"><div class="timeline-meta"><span>Aug 2023 — Expected 2027</span><span>Jeddah, Saudi Arabia</span></div><div><p class="timeline-type">Education</p><h3>Bachelor of Software Engineering</h3><p class="organization">University of Jeddah · College of Computer Science and Engineering</p><p>GPA: 4.61 / 5.00</p></div></article>
-      <article class="timeline-item reveal"><div class="timeline-meta"><span>Mar 2025 — May 2025</span><span>Jeddah, Saudi Arabia</span></div><div><p class="timeline-type">Experience</p><h3>Student Developer</h3><p class="organization">University of Jeddah</p><ul><li>Contributed to interface design, requirements analysis, project planning, documentation, and usability evaluation.</li><li>Applied Agile practices and software engineering principles while collaborating in an academic development team.</li></ul></div></article>
-      <article class="timeline-item reveal"><div class="timeline-meta"><span>Oct 2022 — Dec 2022</span><span>Jeddah, Saudi Arabia</span></div><div><p class="timeline-type">Experience</p><h3>Event Organizer</h3><p class="organization">Prestige Saudi Co. Ltd — Jeddah Season</p><ul><li>Supported event operations and visitor communication during high-attendance periods.</li><li>Helped manage queues and organize crowds during peak periods.</li></ul></div></article>
-    </div></div></section>
-
-    <!-- Contact -->
-    <section class="section contact-section" id="contact" aria-labelledby="contact-title"><div class="container contact-grid reveal"><div><p class="eyebrow">Get in touch</p><h2 id="contact-title">Let’s build something useful.</h2><p>I’m open to internship, collaboration, and research opportunities in software engineering, web development, and applied AI.</p></div><div class="contact-links"><a href="mailto:Osama.a.alghamdi707@gmail.com"><span>Email</span><strong>Osama.a.alghamdi707@gmail.com</strong></a><a href="tel:+966597499473"><span>Phone</span><strong>+966 59 749 9473</strong></a><a href="https://www.linkedin.com/in/osama-alghamdi-51555a34b" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><strong>Connect with me ↗</strong></a><a href="https://github.com/Ivve33" target="_blank" rel="noopener noreferrer"><span>GitHub</span><strong>Explore my work ↗</strong></a></div></div></section>
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div>
+          <h2 id="contact-title">Get in touch</h2>
+          <p>I’m open to CO-OP, research, and collaboration opportunities in software engineering and applied AI.</p>
+          <a class="button" href="mailto:Osama.a.alghamdi707@gmail.com">Email me</a>
+        </div>
+        <ul class="contact-links">
+          <li><a href="mailto:Osama.a.alghamdi707@gmail.com"><span>Email</span><strong>Osama.a.alghamdi707@gmail.com</strong></a></li>
+          <li><a href="tel:+966597499473"><span>Phone</span><strong>+966 59 749 9473</strong></a></li>
+          <li><a href="https://www.linkedin.com/in/osama-alghamdi-51555a34b" target="_blank" rel="noopener"><span>LinkedIn</span><strong>Connect on LinkedIn</strong></a></li>
+          <li><a href="https://github.com/Ivve33" target="_blank" rel="noopener"><span>GitHub</span><strong>Explore my repositories</strong></a></li>
+        </ul>
+      </div>
+    </section>
   </main>
 
-  <footer class="site-footer"><div class="container footer-wrap"><div><strong>Osama Al-Ghamdi</strong><p>Built with HTML, CSS, and JavaScript.</p></div><p>© <span id="current-year">2026</span> Osama Al-Ghamdi</p><div class="footer-links"><a href="https://github.com/Ivve33" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://www.linkedin.com/in/osama-alghamdi-51555a34b" target="_blank" rel="noopener noreferrer">LinkedIn</a></div></div></footer>
-  <button class="back-to-top" type="button" aria-label="Back to top">↑</button>
-  <script src="js/main.js"></script>
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© <span id="current-year">2026</span> Osama Al-Ghamdi</p>
+      <a href="#home">Back to top</a>
+    </div>
+  </footer>
 </body>
 </html>
