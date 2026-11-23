@@ -1036,13 +1036,20 @@ button {
   object-position: center 64%;
 }
 
-.case-airquest .event-photo img,
-.case-airquest .stage-photo img {
-  aspect-ratio: 1.15;
+.case-airquest .case-gallery {
+  max-width: 54rem;
+  margin-inline: auto;
 }
 
-.case-airquest .event-photo img {
-  object-position: center 42%;
+.case-airquest .case-gallery img {
+  aspect-ratio: 9 / 16;
+  object-fit: contain;
+}
+
+.case-15-min .event-photo img {
+  /* Frame the 740 × 416 photo inside the original 740 × 1600 screenshot. */
+  aspect-ratio: 740 / 416;
+  object-position: center 51.01%;
 }
 
 .photo-link {
