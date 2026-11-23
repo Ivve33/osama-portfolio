@@ -232,7 +232,7 @@ button {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.24fr) minmax(0, .86fr);
+  grid-template-columns: minmax(0, 1.17fr) minmax(0, .93fr);
   align-items: center;
   gap: clamp(2.25rem, 7vw, 7rem);
 }
@@ -440,8 +440,8 @@ button {
 
 .project-visual {
   position: relative;
-  min-height: 156px;
-  aspect-ratio: 2.35;
+  min-height: 176px;
+  aspect-ratio: 1.65;
   overflow: hidden;
   border-radius: calc(var(--radius) - 1px) calc(var(--radius) - 1px) 0 0;
 }
@@ -452,30 +452,6 @@ button {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.repocare-visual {
-  background: #f5f7fb;
-}
-
-.repocare-visual img {
-  object-fit: contain;
-}
-
-.rafiq-visual, .airquest-visual {
-  background: var(--accent-soft);
-}
-
-.rafiq-visual img {
-  object-position: center 65%;
-}
-
-.airquest-visual img {
-  object-position: center 39%;
-}
-
-.tuwaiq-visual img {
-  object-position: center 48%;
 }
 
 .project-content {
@@ -841,11 +817,11 @@ button {
   }
 
   .portrait {
-    width: min(100%, 28rem);
+    width: min(100%, 34rem);
   }
 
   .portrait img {
-    aspect-ratio: 1.26;
+    aspect-ratio: 1.09;
     object-position: 50% 43%;
   }
 
@@ -931,7 +907,7 @@ button {
 
 .case-layout {
   display: grid;
-  grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
+  grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr);
   align-items: center;
   gap: clamp(1.5rem, 5.5vw, 5rem);
 }
@@ -980,22 +956,9 @@ button {
   font-size: .875rem;
 }
 
-.case-layout .case-photo img {
-  aspect-ratio: 1.35;
+.case-cover img {
+  aspect-ratio: 1.65;
   object-fit: cover;
-  object-position: center 55%;
-}
-
-.case-rafiq-al-hajj .case-layout img {
-  object-position: center 66%;
-}
-
-.case-airquest .case-layout img {
-  object-position: center 42%;
-}
-
-.case-15-min .case-layout img {
-  aspect-ratio: 16 / 9;
 }
 
 .case-facts {
@@ -1046,20 +1009,56 @@ button {
   margin-top: .65rem;
 }
 
-.case-gallery .case-photo {
-  width: min(100%, 900px);
+.case-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1rem, 3vw, 2rem);
+  align-items: start;
 }
 
-.case-gallery a {
+.case-gallery .case-photo:only-child {
+  grid-column: 1 / -1;
+  width: min(100%, 42rem);
+}
+
+.case-gallery img {
+  aspect-ratio: 1.55;
+  object-fit: contain;
+  background: var(--surface-muted);
+}
+
+.case-gallery .event-photo img,
+.case-gallery .stage-photo img {
+  object-fit: cover;
+}
+
+.case-rafiq-al-hajj .event-photo img {
+  object-position: center 64%;
+}
+
+.case-airquest .case-gallery {
+  max-width: 54rem;
+  margin-inline: auto;
+}
+
+.case-airquest .case-gallery img {
+  aspect-ratio: 9 / 16;
+  object-fit: contain;
+}
+
+.case-15-min .event-photo img {
+  /* Frame the 740 × 416 photo inside the original 740 × 1600 screenshot. */
+  aspect-ratio: 740 / 416;
+  object-position: center 51.01%;
+}
+
+.photo-link {
   display: block;
+  cursor: zoom-in;
 }
 
-.case-gallery a:focus-visible {
+.photo-link:focus-visible {
   outline-offset: -4px;
-}
-
-.case-airquest .case-gallery .case-photo {
-  max-width: 27rem;
 }
 
 .case-next {
@@ -1071,7 +1070,7 @@ button {
 }
 
 @media (max-width: 700px) {
-  .case-layout, .case-notes {
+  .case-layout, .case-notes, .case-gallery {
     grid-template-columns: minmax(0, 1fr);
   }
 
