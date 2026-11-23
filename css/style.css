@@ -454,26 +454,6 @@ button {
   object-fit: cover;
 }
 
-.repocare-visual img {
-  object-position: center 55%;
-}
-
-.rafiq-visual, .airquest-visual {
-  background: var(--accent-soft);
-}
-
-.rafiq-visual img {
-  object-position: center 62%;
-}
-
-.airquest-visual img {
-  object-position: center 44%;
-}
-
-.tuwaiq-visual img {
-  object-position: center 48%;
-}
-
 .project-content {
   display: flex;
   flex-grow: 1;
@@ -976,27 +956,9 @@ button {
   font-size: .875rem;
 }
 
-.case-layout .case-photo img {
-  aspect-ratio: 1.35;
+.case-cover img {
+  aspect-ratio: 1.65;
   object-fit: cover;
-  object-position: center 55%;
-}
-
-.case-rafiq-al-hajj .case-layout img,
-.case-airquest .case-layout img {
-  aspect-ratio: 1.04;
-}
-
-.case-rafiq-al-hajj .case-layout img {
-  object-position: center 62%;
-}
-
-.case-airquest .case-layout img {
-  object-position: center 43%;
-}
-
-.case-15-min .case-layout img {
-  aspect-ratio: 16 / 9;
 }
 
 .case-facts {
@@ -1047,12 +1009,40 @@ button {
   margin-top: .65rem;
 }
 
-.case-gallery .case-photo {
-  width: min(100%, var(--gallery-width, 900px));
+.case-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1rem, 3vw, 2rem);
+  align-items: start;
 }
 
-.case-repocare {
-  --gallery-width: 1304px;
+.case-gallery .case-photo:only-child {
+  grid-column: 1 / -1;
+  width: min(100%, 42rem);
+}
+
+.case-gallery img {
+  aspect-ratio: 1.55;
+  object-fit: contain;
+  background: var(--surface-muted);
+}
+
+.case-gallery .event-photo img,
+.case-gallery .stage-photo img {
+  object-fit: cover;
+}
+
+.case-rafiq-al-hajj .event-photo img {
+  object-position: center 64%;
+}
+
+.case-airquest .event-photo img,
+.case-airquest .stage-photo img {
+  aspect-ratio: 1.15;
+}
+
+.case-airquest .event-photo img {
+  object-position: center 42%;
 }
 
 .photo-link {
@@ -1064,10 +1054,6 @@ button {
   outline-offset: -4px;
 }
 
-.case-airquest .case-gallery .case-photo {
-  max-width: 27rem;
-}
-
 .case-next {
   display: flex;
   flex-wrap: wrap;
@@ -1077,7 +1063,7 @@ button {
 }
 
 @media (max-width: 700px) {
-  .case-layout, .case-notes {
+  .case-layout, .case-notes, .case-gallery {
     grid-template-columns: minmax(0, 1fr);
   }
 
