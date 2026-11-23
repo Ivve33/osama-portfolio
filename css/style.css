@@ -232,7 +232,7 @@ button {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.24fr) minmax(0, .86fr);
+  grid-template-columns: minmax(0, 1.17fr) minmax(0, .93fr);
   align-items: center;
   gap: clamp(2.25rem, 7vw, 7rem);
 }
@@ -440,8 +440,8 @@ button {
 
 .project-visual {
   position: relative;
-  min-height: 156px;
-  aspect-ratio: 2.35;
+  min-height: 176px;
+  aspect-ratio: 1.65;
   overflow: hidden;
   border-radius: calc(var(--radius) - 1px) calc(var(--radius) - 1px) 0 0;
 }
@@ -454,12 +454,8 @@ button {
   object-fit: cover;
 }
 
-.repocare-visual {
-  background: #f5f7fb;
-}
-
 .repocare-visual img {
-  object-fit: contain;
+  object-position: center 55%;
 }
 
 .rafiq-visual, .airquest-visual {
@@ -467,11 +463,11 @@ button {
 }
 
 .rafiq-visual img {
-  object-position: center 65%;
+  object-position: center 62%;
 }
 
 .airquest-visual img {
-  object-position: center 39%;
+  object-position: center 44%;
 }
 
 .tuwaiq-visual img {
@@ -841,11 +837,11 @@ button {
   }
 
   .portrait {
-    width: min(100%, 28rem);
+    width: min(100%, 34rem);
   }
 
   .portrait img {
-    aspect-ratio: 1.26;
+    aspect-ratio: 1.09;
     object-position: 50% 43%;
   }
 
@@ -931,7 +927,7 @@ button {
 
 .case-layout {
   display: grid;
-  grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
+  grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr);
   align-items: center;
   gap: clamp(1.5rem, 5.5vw, 5rem);
 }
@@ -986,12 +982,17 @@ button {
   object-position: center 55%;
 }
 
+.case-rafiq-al-hajj .case-layout img,
+.case-airquest .case-layout img {
+  aspect-ratio: 1.04;
+}
+
 .case-rafiq-al-hajj .case-layout img {
-  object-position: center 66%;
+  object-position: center 62%;
 }
 
 .case-airquest .case-layout img {
-  object-position: center 42%;
+  object-position: center 43%;
 }
 
 .case-15-min .case-layout img {
@@ -1047,14 +1048,19 @@ button {
 }
 
 .case-gallery .case-photo {
-  width: min(100%, 900px);
+  width: min(100%, var(--gallery-width, 900px));
 }
 
-.case-gallery a {
+.case-repocare {
+  --gallery-width: 1304px;
+}
+
+.photo-link {
   display: block;
+  cursor: zoom-in;
 }
 
-.case-gallery a:focus-visible {
+.photo-link:focus-visible {
   outline-offset: -4px;
 }
 
